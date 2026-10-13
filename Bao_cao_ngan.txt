@@ -1,0 +1,38 @@
+BÁO CÁO NGẮN LAB 01
+
+1. Nội dung
+Chương trình Console C# gồm 10 bài, chọn bằng menu chính.
+
+- Bài 1: Nhập họ tên, năm sinh; tính tuổi gần đúng theo năm hiện tại.
+- Bài 2: Tính diện tích xung quanh và thể tích hình trụ bằng Math.PI.
+  Bán kính và chiều cao phải lớn hơn 0.
+- Bài 3: Xếp loại điểm theo các mốc 9, 8, 6.5 và 5; chỉ nhận điểm 0..10.
+- Bài 4: Dùng do-while và switch cho menu tính tổng 1..n,
+  in bảng cửu chương 7 và quay lại menu chính.
+- Bài 5: Chia hai số nguyên. Bắt lỗi nhập chữ, chia cho 0 và tràn số.
+  finally thông báo kết thúc phép tính.
+- Bài 6: Xét a = 0, phương trình bậc nhất, vô nghiệm, vô số nghiệm;
+  khi a khác 0 xét delta để tìm nghiệm thực. In 2 chữ số thập phân.
+- Bài 7: Nhập dãy số nguyên, tính tổng, trung bình, min, max và số chẵn.
+- Bài 8: In số nguyên tố không vượt quá n. Chỉ thử ước đến căn bậc hai.
+- Bài 9: Dùng switch đọc số 0..99, xử lý cách đọc một/mốt và năm/lăm.
+- Bài 10: Menu vẽ tam giác vuông đặc, tam giác vuông rỗng,
+  hình vuông rỗng bằng dấu *.
+
+2. Kiểm tra
+Build cấu hình Release trên .NET SDK 10.0.400: 0 lỗi, 0 cảnh báo.
+Đã chạy 12 lượt kiểm thử, gồm 10 nhóm bài và 2 nhóm dữ liệu sai/tràn số.
+Các kết quả chi tiết được lưu trong Ket_qua_chay_thu.txt.
+
+3. Một số kết quả
+Hình trụ r = 3, h = 5: diện tích xung quanh 94.25, thể tích 141.37.
+Tổng 1..10 = 55.
+Phương trình x^2 - 3x + 2 = 0: nghiệm 2.00 và 1.00.
+Dãy 1, 2, 3, 4, 5: tổng 15, trung bình 3.00, min 1, max 5, có 2 số chẵn.
+Số nguyên tố tới 20: 2, 3, 5, 7, 11, 13, 17, 19.
+15 đọc là mười lăm; 21 đọc là hai mươi mốt; 99 đọc là chín mươi chín.
+
+4. Ghi chú
+Nộp báo cáo ngắn và log chạy thử thay cho ảnh theo lựa chọn trong đề.
+Đã kiểm tra các trường hợp đã ghi trong log, chưa khẳng định bao phủ
+mọi tổ hợp dữ liệu. Các giới hạn nhập được ghi trong README.txt.

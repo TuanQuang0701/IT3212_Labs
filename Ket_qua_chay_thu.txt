@@ -1,0 +1,49 @@
+KẾT QUẢ CHẠY THỬ LAB 01
+
+Bài 1: ĐẠT
+Dữ liệu nhập: 1 | An | 2006 | 0
+Kiểm tra: Xin chào An
+
+Bài 2: ĐẠT
+Dữ liệu nhập: 2 | 0 | 3 | -1 | 5 | 0
+Kiểm tra: 94.25; 141.37
+
+Bài 3: ĐẠT
+Dữ liệu nhập: 3 | 11 | 9 | 3 | 8 | 3 | 6.5 | 3 | 5 | 3 | 4 | 0
+Kiểm tra: Xuất sắc; Giỏi; Khá; Trung bình; Yếu
+
+Bài 4: ĐẠT
+Dữ liệu nhập: 4 | 1 | 10 | 2 | 0 | 0
+Kiểm tra: Tổng = 55; 7 x 10 = 70
+
+Bài 5: ĐẠT
+Dữ liệu nhập: 5 | 10 | 2 | 5 | 10 | 0 | 5 | abc | 0
+Kiểm tra: a / b = 5; Không thể chia cho 0; Dữ liệu phải là số nguyên; Kết thúc phép tính
+
+Bài 6: ĐẠT
+Dữ liệu nhập: 6 | 1 | -3 | 2 | 6 | 1 | 2 | 1 | 6 | 1 | 0 | 1 | 6 | 0 | 2 | -4 | 6 | 0 | 0 | 0 | 6 | 0 | 0 | 1 | 0
+Kiểm tra: x1 = 2.00; x2 = 1.00; Nghiệm kép x = -1.00; Vô nghiệm thực; bậc nhất, x = 2.00; Vô số nghiệm; Vô nghiệm.
+
+Bài 7: ĐẠT
+Dữ liệu nhập: 7 | 5 | 1 | 2 | 3 | 4 | 5 | 0
+Kiểm tra: Tổng: 15; Trung bình: 3.00; Lớn nhất: 5; Nhỏ nhất: 1; số chẵn: 2
+
+Bài 8: ĐẠT
+Dữ liệu nhập: 8 | 20 | 8 | 1 | 0
+Kiểm tra: 2 3 5 7 11 13 17 19; Không có số nguyên tố
+
+Bài 9: ĐẠT
+Dữ liệu nhập: 9 | 0 | 9 | 15 | 9 | 21 | 9 | 25 | 9 | 99 | 0
+Kiểm tra: không; mười lăm; hai mươi mốt; hai mươi lăm; chín mươi chín
+
+Bài 10: ĐẠT
+Dữ liệu nhập: 10 | 1 | 5 | 2 | 5 | 3 | 5 | 0 | 0
+Kiểm tra: * * * * *; *       *
+
+Nhập sai kiểu: ĐẠT
+Dữ liệu nhập: abc | 3 | NaN | -1 | 6,5 | 0
+Kiểm tra: Nhập số nguyên; Nhập số hợp lệ; Khá
+
+Tràn phép chia: ĐẠT
+Dữ liệu nhập: 5 | -2147483648 | -1 | 0
+Kiểm tra: vượt phạm vi int
