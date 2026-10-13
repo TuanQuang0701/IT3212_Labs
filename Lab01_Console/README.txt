@@ -2,12 +2,12 @@ LAB 01 - LẬP TRÌNH .NET
 
 1. Cách chạy
 Máy cần có .NET SDK 10 và Visual Studio hỗ trợ .NET 10.
-Mở solution IT3212_Labs.sln bằng Visual Studio.
+Mở solution IT3212_Labs.sln ở thư mục cha bằng Visual Studio.
 Chọn Lab01_Console làm Startup Project, nhấn Ctrl + F5 để chạy.
 Chọn bài từ 1 đến 10, nhập dữ liệu theo hướng dẫn. Chọn 0 để thoát.
 Bài 4 và bài 10 có menu riêng; chọn 0 để quay lại menu chính.
 Cũng có thể mở terminal ở thư mục này và chạy:
-dotnet run --project Lab01_Console
+dotnet run
 
 2. Dữ liệu dùng để thử
 Bài 1: Nguyễn Văn An, năm sinh 2006.
