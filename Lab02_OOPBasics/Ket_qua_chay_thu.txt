@@ -1,0 +1,606 @@
+ĐẠT: Constructor mặc định
+ĐẠT: Constructor đầy đủ và bỏ khoảng trắng
+ĐẠT: Họ tên rỗng
+ĐẠT: Mã rỗng
+ĐẠT: Điểm không hợp lệ -1
+ĐẠT: Điểm không hợp lệ 10.1
+ĐẠT: Điểm không hợp lệ NaN
+ĐẠT: Điểm không hợp lệ ∞
+ĐẠT: Ngày sinh tương lai
+ĐẠT: Tuổi đúng ngày sinh
+ĐẠT: Tuổi chưa đến sinh nhật
+ĐẠT: Xếp loại tại 0
+ĐẠT: Xếp loại tại 4.99
+ĐẠT: Xếp loại tại 5
+ĐẠT: Xếp loại tại 6.5
+ĐẠT: Xếp loại tại 8
+ĐẠT: Xếp loại tại 9
+ĐẠT: Xếp loại tại 10
+ĐẠT: Năm sinh viên và tìm không phân biệt hoa thường
+ĐẠT: Thêm và từ chối mã trùng
+ĐẠT: Sửa hợp lệ và sửa sai không đổi dữ liệu
+ĐẠT: Xóa và xóa mã không có
+ĐẠT: Sắp xếp điểm giảm dần
+ĐẠT: Sắp xếp họ tên
+Số sinh viên: 0
+ĐẠT: Thống kê danh sách rỗng
+ĐẠT: Thành tiền sản phẩm
+ĐẠT: Giá âm
+ĐẠT: Số lượng âm
+ĐẠT: Nạp rút chuyển tiền
+ĐẠT: Không đủ số dư giữ nguyên hai tài khoản
+ĐẠT: Rút quá số dư
+ĐẠT: Tiền giao dịch không dương
+ĐẠT: Không chuyển chính mình
+ĐẠT: Tràn số khi chuyển giữ nguyên số dư
+ĐẠT: Tính lương
+ĐẠT: Hệ số không dương
+ĐẠT: Hình chữ nhật
+ĐẠT: Cạnh không hợp lệ
+Tổng kết: 38 đạt, 0 lỗi.
+
+
+=== Bài 1 và 2 ===
+Dữ liệu nhập:
+1
+2
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: SV01     | Nguyễn An                | 12/05/2005 | 8.20 | 21 tuổi | Giỏi
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Chưa có  | Chưa có                  | 14/10/2026 | 0.00 | 0 tuổi | Yếu
+SV02     | Trần Bình                | 03/09/2005 | 6.80 | 21 tuổi | Khá
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 3 từ chối điểm sai ===
+Dữ liệu nhập:
+3
+S1
+An
+01/01/2005
+11
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Mã SV: Họ tên: Ngày sinh (dd/MM/yyyy): Điểm TB: Điểm phải từ 0 đến 10. (Parameter 'DiemTB')
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 4 xếp loại ===
+Dữ liệu nhập:
+4
+S1
+An
+01/01/2005
+8
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Mã SV: Họ tên: Ngày sinh (dd/MM/yyyy): Điểm TB: Tuổi: 21; Xếp loại: Giỏi
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 5 tìm mã ===
+Dữ liệu nhập:
+5
+sv03
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: SV01     | Nguyễn An                | 12/05/2005 | 9.20 | 21 tuổi | Xuất sắc
+SV02     | Trần Bình                | 03/09/2005 | 8.20 | 21 tuổi | Giỏi
+SV03     | Lê Chi                   | 20/01/2006 | 6.80 | 20 tuổi | Khá
+SV04     | Phạm Dũng                | 25/12/2005 | 5.50 | 20 tuổi | Trung bình
+SV05     | Hoàng Hà                 | 07/07/2006 | 4.00 | 20 tuổi | Yếu
+Mã cần tìm: SV03     | Lê Chi                   | 20/01/2006 | 6.80 | 20 tuổi | Khá
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 6 sản phẩm ===
+Dữ liệu nhập:
+6
+P1
+Bút
+5000
+3
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Mã SP: Tên SP: Đơn giá: Số lượng: P1 - Bút; Thành tiền: 15,000.00
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 7 giao dịch và số dư thiếu ===
+Dữ liệu nhập:
+7
+1
+200000
+2
+100000
+3
+300000
+2
+9999999
+0
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+TK01: 1,000,000; TK02: 500,000
+1. Nạp TK01
+2. Rút TK01
+3. Chuyển TK01 sang TK02
+0. Quay lại
+Chọn: Tiền nạp: 
+TK01: 1,200,000; TK02: 500,000
+1. Nạp TK01
+2. Rút TK01
+3. Chuyển TK01 sang TK02
+0. Quay lại
+Chọn: Tiền rút: 
+TK01: 1,100,000; TK02: 500,000
+1. Nạp TK01
+2. Rút TK01
+3. Chuyển TK01 sang TK02
+0. Quay lại
+Chọn: Tiền chuyển: 
+TK01: 800,000; TK02: 800,000
+1. Nạp TK01
+2. Rút TK01
+3. Chuyển TK01 sang TK02
+0. Quay lại
+Chọn: Tiền rút: Số dư không đủ.
+
+TK01: 800,000; TK02: 800,000
+1. Nạp TK01
+2. Rút TK01
+3. Chuyển TK01 sang TK02
+0. Quay lại
+Chọn: 
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 8 bảng lương ===
+Dữ liệu nhập:
+8
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Mã       | Họ tên                 | Lương cơ bản | Hệ số | Phụ cấp    | Tổng lương
+NV01     | Nguyễn An              |    5,000,000 |     2 |    500,000 |   10,500,000
+NV02     | Trần Bình              |    5,000,000 |   1.5 |    300,000 |    7,800,000
+NV03     | Lê Chi                 |    5,000,000 |     1 |          0 |    5,000,000
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 9 hình chữ nhật ===
+Dữ liệu nhập:
+9
+3
+4
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Chiều dài: Chiều rộng: Chu vi: 14.00; Diện tích: 12.00
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 10 thêm sửa tìm xóa sắp xếp thống kê ===
+Dữ liệu nhập:
+10
+2
+SV06
+Test An
+01/01/2005
+8
+3
+SV06
+Test Bình
+02/02/2005
+9
+5
+sv06
+6
+2
+7
+4
+SV06
+5
+SV06
+7
+0
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: Mã SV: Họ tên: Ngày sinh (dd/MM/yyyy): Điểm TB: Đã thêm.
+
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: Mã cần sửa: Họ tên: Ngày sinh (dd/MM/yyyy): Điểm TB: Đã sửa.
+
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: Mã cần tìm: SV06     | Test Bình                | 02/02/2005 | 9.00 | 21 tuổi | Xuất sắc
+
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: 1. Họ tên tăng dần; 2. Điểm giảm dần: SV01     | Nguyễn An                | 12/05/2005 | 9.20 | 21 tuổi | Xuất sắc
+SV06     | Test Bình                | 02/02/2005 | 9.00 | 21 tuổi | Xuất sắc
+SV02     | Trần Bình                | 03/09/2005 | 8.20 | 21 tuổi | Giỏi
+SV03     | Lê Chi                   | 20/01/2006 | 6.80 | 20 tuổi | Khá
+SV04     | Phạm Dũng                | 25/12/2005 | 5.50 | 20 tuổi | Trung bình
+SV05     | Hoàng Hà                 | 07/07/2006 | 4.00 | 20 tuổi | Yếu
+
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: Số sinh viên: 6
+Điểm trung bình: 7.12; Cao nhất: 9.20; Thấp nhất: 4.00
+Xuất sắc: 2
+Giỏi: 1
+Khá: 1
+Trung bình: 1
+Yếu: 1
+
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: Mã cần xóa: Đã xóa.
+
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: Mã cần tìm: Không tìm thấy.
+
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: Số sinh viên: 5
+Điểm trung bình: 6.74; Cao nhất: 9.20; Thấp nhất: 4.00
+Xuất sắc: 1
+Giỏi: 1
+Khá: 1
+Trung bình: 1
+Yếu: 1
+
+1. In danh sách
+2. Thêm
+3. Sửa (giữ mã)
+4. Xóa
+5. Tìm mã
+6. Sắp xếp
+7. Thống kê
+0. Quay lại
+Chọn: 
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Nhập sai số và ngày rồi nhập lại ===
+Dữ liệu nhập:
+abc
+4
+S1
+An
+31/02/2005
+01/01/2005
+abc
+6,5
+0
+
+Kết quả:
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Nhập số nguyên từ 0 đến 10.
+Chọn: Mã SV: Họ tên: Ngày sinh (dd/MM/yyyy): Ngày sinh không hợp lệ.
+Ngày sinh (dd/MM/yyyy): Điểm TB: Số không hợp lệ.
+Điểm TB: Tuổi: 21; Xếp loại: Khá
+
+LAB 02 - OOP
+1. Lớp SinhVien
+2. Constructor
+3. Kiểm tra đóng gói
+4. Tuổi và xếp loại
+5. Danh sách và tìm mã
+6. Sản phẩm
+7. Tài khoản ngân hàng
+8. Nhân viên
+9. Hình chữ nhật
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+Kiểm thử menu: 10/10 đạt.

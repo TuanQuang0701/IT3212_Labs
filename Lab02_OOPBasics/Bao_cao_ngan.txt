@@ -1,0 +1,47 @@
+BÁO CÁO LAB 02 - OOP CƠ BẢN
+Lê Tuấn Quang - 24000641 - DCCNTT15.C.1
+
+Bài 1 đến 5
+Lớp SinhVien chứa mã, họ tên, ngày sinh và điểm trung bình. Constructor
+mặc định tạo trạng thái hợp lệ; constructor đầy đủ gán dữ liệu qua thuộc
+tính. Các trường private được kiểm tra trong setter: họ tên/mã không rỗng,
+ngày sinh không ở tương lai, điểm hữu hạn từ 0 đến 10.
+TinhTuoi trừ thêm 1 nếu chưa đến sinh nhật. XepLoai dùng các mốc 9, 8,
+6.5 và 5 theo đề. Danh sách có 5 sinh viên, hiển thị bằng foreach,
+tìm theo mã không phân biệt chữ hoa/thường.
+
+Bài 6
+SanPham kiểm tra mã, tên, giá và số lượng. Thành tiền = đơn giá * số lượng.
+Giá 5000 và số lượng 3 cho kết quả 15000; giá/số lượng âm bị từ chối.
+
+Bài 7
+TaiKhoanNganHang có số dư chỉ được sửa từ bên trong lớp. Tiền giao dịch
+phải dương; rút/chuyển không được vượt số dư. Khi chuyển tiền, kiểm tra
+hết điều kiện và tính số dư đích trước khi cập nhật cả hai tài khoản.
+Nạp 200000, rút 100000 rồi chuyển 300000 từ số dư 1000000 sang tài khoản
+có 500000 cho kết quả cả hai cùng 800000. Rút quá số dư không làm đổi tiền.
+
+Bài 8
+NhanVien tính lương = lương cơ bản * hệ số + phụ cấp. Lương, phụ cấp
+không âm; hệ số dương. Bảng mẫu có 3 nhân viên với tổng lương lần lượt
+10500000, 7800000 và 5000000.
+
+Bài 9
+HinhChuNhat có constructor mặc định 1 x 1 và constructor đủ hai cạnh.
+Cạnh phải dương và hữu hạn. Kích thước 3 x 4 cho chu vi 14, diện tích 12.
+
+Bài 10
+QuanLySinhVien tách xử lý danh sách khỏi menu. Thêm kiểm tra mã trùng;
+sửa giữ mã và chỉ thay dữ liệu sau khi kiểm tra; xóa/tìm báo khi không có.
+Sắp xếp theo họ tên tăng dần hoặc điểm giảm dần. Thống kê số sinh viên,
+điểm trung bình/cao nhất/thấp nhất và số sinh viên theo từng xếp loại.
+
+Kết quả chạy
+Solution gồm Lab01 và Lab02 biên dịch thành công với .NET SDK 10.0.400,
+0 lỗi, 0 cảnh báo. 38 kiểm tra lớp và 10 kịch bản menu đều đạt.
+Log thực tế nằm trong Ket_qua_chay_thu.txt; kiểm tra lớp chạy lại bằng
+dotnet run --project Lab02_OOPBasics -- --test
+
+Giới hạn
+Dữ liệu trong bộ nhớ, không lưu file hay cơ sở dữ liệu. Hai tài khoản
+ngân hàng được tạo lại mỗi lần vào bài 7. Bài 8 dùng bảng lương mẫu.
