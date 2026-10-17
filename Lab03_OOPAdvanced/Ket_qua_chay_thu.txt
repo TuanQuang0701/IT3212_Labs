@@ -1,0 +1,701 @@
+ĐẠT: Kế thừa và base constructor
+ĐẠT: Gọi override qua lớp cha
+ĐẠT: Học phí chính quy
+ĐẠT: Học phí liên thông
+ĐẠT: Không nhận tín chỉ âm
+ĐẠT: Interface từ chối điểm -1
+ĐẠT: Interface từ chối điểm 11
+ĐẠT: Interface từ chối điểm NaN
+ĐẠT: Interface từ chối điểm ∞
+ĐẠT: Interface từ chối mã rỗng
+ĐẠT: Interface từ chối tên rỗng
+ĐẠT: Interface từ chối ngày tương lai
+ĐẠT: IPrintable
+ĐẠT: Danh sách đa hình
+ĐẠT: Lương văn phòng
+ĐẠT: Lương kinh doanh
+ĐẠT: Lương giảng viên
+ĐẠT: Không nhận tỷ lệ hoa hồng sai
+ĐẠT: Chi phí phương tiện
+ĐẠT: Thời gian phương tiện
+ĐẠT: Quãng đường âm
+ĐẠT: Tài liệu ghi đè đúng loại
+ĐẠT: Tiền thừa
+ĐẠT: Thanh toán thiếu tiền không ghi lịch sử
+ĐẠT: Thanh toán thành công ghi đúng giao dịch
+ĐẠT: Thanh toán 0 bị từ chối
+ĐẠT: Quản lý 5 sinh viên nhiều loại
+ĐẠT: Tìm kiếm mã và tên
+ĐẠT: Không thêm mã trùng
+ĐẠT: Không thêm dữ liệu sai
+ĐẠT: Sửa sai không mất dữ liệu cũ
+ĐẠT: Xóa và sắp xếp
+ĐẠT: CSV thoát dấu ngoặc kép
+Tổng kết: 33 đạt, 0 lỗi.
+
+
+=== Bài 1 kế thừa ===
+Dữ liệu nhập:
+1
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Kế thừa HoTen: Nguyễn An; NgaySinh: 12/05/2005
+Mã: SV01; Điểm: 8.2; Tuổi: 21
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 2 ghi đè ===
+Dữ liệu nhập:
+2
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Người mẫu | 01/01/2000
+Nguyễn An | 12/05/2005 | SV01 | 8.20 | Thông thường
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 3 học phí ===
+Dữ liệu nhập:
+3
+18
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Số tín chỉ: Chính quy: 8,100,000; Liên thông: 9,360,000
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 4 hợp lệ ===
+Dữ liệu nhập:
+4
+SV06
+Test An
+01/01/2005
+8
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Mã SV: Họ tên: Ngày sinh dd/MM/yyyy: Điểm TB: Test An | 01/01/2005 | SV06 | 8.00 | Thông thường | Giỏi
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 4 không hợp lệ ===
+Dữ liệu nhập:
+4
+SV06
+Test An
+01/01/2005
+11
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Mã SV: Họ tên: Ngày sinh dd/MM/yyyy: Điểm TB: Không hợp lệ: Điểm phải từ 0 đến 10.
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 5 đa hình ===
+Dữ liệu nhập:
+5
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Nguyễn An | Chính quy | 8,100,000
+Trần Bình | Liên thông | 7,800,000
+Lê Chi | Chính quy | 9,000,000
+Phạm Dũng | Liên thông | 6,240,000
+Hoàng Hà | Chính quy | 7,200,000
+Tổng học phí: 38,340,000
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 6 nhân viên ===
+Dữ liệu nhập:
+6
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: NhanVienVanPhong | Nguyễn An | 7,500,000
+NhanVienKinhDoanh | Trần Bình | 9,000,000
+GiangVien | Lê Chi | 11,000,000
+Tổng lương: 27,500,000
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 7 phương tiện ===
+Dữ liệu nhập:
+7
+60
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Quãng đường km: Xe máy | 40 km/h | 1.50 giờ | 42,000 đồng
+Ô tô | 60 km/h | 1.00 giờ | 150,000 đồng
+Xe đạp | 15 km/h | 4.00 giờ | 0 đồng
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 8 thư viện ===
+Dữ liệu nhập:
+8
+S01
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Sách | S01 | Lập trình C# | 2024 | Nguyễn An
+Tạp chí | TC01 | Công nghệ phần mềm | 2025 | Số 12
+Luận văn | LV01 | Quản lý thư viện | 2025 | Trần Bình
+Tìm mã hoặc tiêu đề: Sách | S01 | Lập trình C# | 2024 | Nguyễn An
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 9 thanh toán ===
+Dữ liệu nhập:
+9
+1
+150000
+200000
+2
+100000
+3
+9999999
+4
+0
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+1. Tiền mặt
+2. Chuyển khoản (còn 1,000,000)
+3. Ví điện tử (còn 500,000)
+4. Lịch sử
+0. Quay lại
+Chọn: Số tiền thanh toán: Tiền khách đưa: Thành công GD001: 150,000
+Tiền thừa: 50,000
+
+1. Tiền mặt
+2. Chuyển khoản (còn 1,000,000)
+3. Ví điện tử (còn 500,000)
+4. Lịch sử
+0. Quay lại
+Chọn: Số tiền thanh toán: Thành công GD002: 100,000
+
+1. Tiền mặt
+2. Chuyển khoản (còn 900,000)
+3. Ví điện tử (còn 500,000)
+4. Lịch sử
+0. Quay lại
+Chọn: Số tiền thanh toán: Lỗi: Không đủ số dư.
+
+1. Tiền mặt
+2. Chuyển khoản (còn 900,000)
+3. Ví điện tử (còn 500,000)
+4. Lịch sử
+0. Quay lại
+Chọn: GD001 | Tiền mặt | 150,000 | 17/10/2026 16:38:59
+GD002 | Chuyển khoản | 100,000 | 17/10/2026 16:38:59
+
+1. Tiền mặt
+2. Chuyển khoản (còn 900,000)
+3. Ví điện tử (còn 500,000)
+4. Lịch sử
+0. Quay lại
+Chọn: 
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Bài 10 quản lý ===
+Dữ liệu nhập:
+10
+2
+1
+CQ06
+Test An
+01/01/2005
+8
+18
+3
+cq06
+6
+CQ06
+2
+LT06
+Test Bình
+02/02/2005
+9
+15
+8
+4
+5
+7
+LT06
+4
+0
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: 1. Chính quy; 2. Liên thông: Mã SV: Họ tên: Ngày sinh dd/MM/yyyy: Điểm TB: Số tín chỉ: Đã thêm.
+
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: Mã hoặc tên: Test An | 01/01/2005 | CQ06 | 8.00 | Chính quy | 18 tín chỉ | 8,100,000 đồng | Giỏi
+
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: Mã cần sửa: 1. Chính quy; 2. Liên thông: Mã SV: Họ tên: Ngày sinh dd/MM/yyyy: Điểm TB: Số tín chỉ: Đã sửa.
+
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: Lê Chi | 20/01/2006 | CQ02 | 9.10 | Chính quy | 20 tín chỉ | 9,000,000 đồng | Xuất sắc
+Test Bình | 02/02/2005 | LT06 | 9.00 | Liên thông | 15 tín chỉ | 7,800,000 đồng | Xuất sắc
+Nguyễn An | 12/05/2005 | CQ01 | 8.20 | Chính quy | 18 tín chỉ | 8,100,000 đồng | Giỏi
+Trần Bình | 03/09/2002 | LT01 | 7.50 | Liên thông | 15 tín chỉ | 7,800,000 đồng | Khá
+Phạm Dũng | 25/12/2001 | LT02 | 6.00 | Liên thông | 12 tín chỉ | 6,240,000 đồng | Trung bình
+Hoàng Hà | 07/07/2005 | CQ03 | 4.50 | Chính quy | 16 tín chỉ | 7,200,000 đồng | Yếu
+
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: Tổng số sinh viên: 6
+Chính quy: 3 SV; ĐTB 7.27; Học phí 24,300,000
+Liên thông: 3 SV; ĐTB 7.50; Học phí 21,840,000
+
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: Đã xuất: C:\Users\admin\Downloads\UC\tmpbyxp2p9g\sinhvien_lab03.csv
+
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: Mã cần xóa: Đã xóa.
+
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: Tổng số sinh viên: 5
+Chính quy: 3 SV; ĐTB 7.27; Học phí 24,300,000
+Liên thông: 2 SV; ĐTB 6.75; Học phí 14,040,000
+
+1. Danh sách
+2. Thêm sinh viên theo loại
+3. Tìm mã hoặc tên
+4. Thống kê theo loại
+5. Xuất CSV
+6. Sửa sinh viên
+7. Xóa sinh viên
+8. Sắp xếp điểm giảm dần
+0. Quay lại
+Chọn: 
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Nhập sai rồi nhập lại ===
+Dữ liệu nhập:
+abc
+3
+-1
+0
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Nhập số nguyên từ 0 đến 10.
+Chọn: Số tín chỉ: Nhập số nguyên từ 0 đến 100.
+Số tín chỉ: Chính quy: 0; Liên thông: 0
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+=== Tìm tài liệu không có ===
+Dữ liệu nhập:
+8
+zzzz
+0
+
+Kết quả:
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: Sách | S01 | Lập trình C# | 2024 | Nguyễn An
+Tạp chí | TC01 | Công nghệ phần mềm | 2025 | Số 12
+Luận văn | LV01 | Quản lý thư viện | 2025 | Trần Bình
+Tìm mã hoặc tiêu đề: Không tìm thấy.
+
+LAB 03 - OOP NÂNG CAO
+1. Kế thừa Người - Sinh viên
+2. Ghi đè phương thức
+3. Lớp trừu tượng và học phí
+4. Interface kiểm tra và in
+5. Danh sách đa hình
+6. Hệ thống nhân viên
+7. Phương tiện
+8. Thư viện
+9. Thanh toán
+10. Quản lý sinh viên
+0. Thoát
+Chọn: 
+
+Kiểm thử menu: 13/13 đạt. CSV: 6 bản ghi và 1 dòng tiêu đề, đúng dữ liệu sau sửa.

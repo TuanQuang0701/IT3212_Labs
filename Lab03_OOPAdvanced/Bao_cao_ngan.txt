@@ -1,0 +1,151 @@
+BÁO CÁO NGẮN LAB 03
+Lê Tuấn Quang - 24000641
+
+Họ và tên: Lê Tuấn Quang
+Mã sinh viên: 24000641
+Lớp: DCCNTT15.C.1
+Học phần: Lập trình .NET
+
+Em xây dựng ứng dụng Console gồm 10 bài về kế thừa, ghi đè, lớp trừu tượng và interface. Mô hình sinh viên được tiếp tục từ Lab02, bổ sung nhiều hệ đào tạo và cách tính học phí. Chương trình có menu chọn bài và các bộ dữ liệu mẫu.
+
+Cách mở và chạy
+
+Giải nén toàn bộ ZIP, mở Lab03_OOPAdvanced.sln bằng Visual Studio 2022 có hỗ trợ .NET 8, sau đó nhấn Ctrl + F5. Nếu mở solution chung của repo, chọn Lab03_OOPAdvanced làm Startup Project.
+
+
+
+Menu chính chọn bài 1 đến 10. Nhập 0 để quay lại hoặc thoát. Ngày sinh theo dd/MM/yyyy; số tiền không có dấu phân cách hàng nghìn. Mỗi bài có mã nguồn ở phần tương ứng; Program.cs ở cuối báo cáo chứa menu và phần nhập liệu.
+
+Sơ đồ lớp người học
+
+
+
+IsValid kiểm tra dữ liệu trước khi thêm hoặc sửa danh sách. Đối tượng nhập nháp có thể chứa giá trị sai để interface trả về thông báo cụ thể. Bản ghi không hợp lệ không được lưu vào danh sách quản lý hoặc xuất CSV.
+
+
+
+Bài 1 Kế thừa Nguoi và SinhVien
+
+Chuyển họ tên, ngày sinh và tính tuổi lên Nguoi. SinhVien kế thừa Nguoi, bổ sung mã và điểm. Constructor dùng base để khởi tạo thông tin của lớp cha.
+
+
+
+
+
+Chọn 1: hiển thị họ tên Nguyễn An, ngày sinh 12/05/2005, mã SV01 và điểm 8,2. Thông tin họ tên và ngày sinh được lấy từ lớp cha.
+
+
+
+Bài 2 Ghi đè phương thức hiển thị
+
+Nguoi khai báo MoTa dạng virtual. SinhVien override phương thức này, gọi base.MoTa rồi bổ sung mã, điểm và loại sinh viên. Khi duyệt bằng tham chiếu Nguoi, phương thức của lớp thực tế vẫn được gọi.
+
+
+
+Chọn 2: dòng Nguoi chỉ có tên và ngày sinh; dòng SinhVien có thêm SV01, điểm 8,20 và loại Thông thường. Đây là kết quả gọi override qua tham chiếu lớp cha.
+
+
+
+Bài 3 Lớp trừu tượng và học phí
+
+NguoiHoc là lớp abstract, không tạo đối tượng trực tiếp. Hai lớp con cung cấp công thức TinhHocPhi riêng: chính quy 450000 đồng/tín chỉ; liên thông 520000 đồng/tín chỉ.
+
+
+
+
+
+
+
+Chọn 3, nhập 18 tín chỉ: chính quy 8100000 đồng; liên thông 9360000 đồng. Giá trị tín chỉ âm bị từ chối.
+
+
+
+Bài 4 Interface kiểm tra và in dữ liệu
+
+IValidatable quy định IsValid(out string message); IPrintable quy định ToDisplayText. SinhVien thực hiện cả hai. Bài làm bổ sung IExportable để sử dụng trong bài 10.
+
+
+
+
+
+Nhập sinh viên Test An, điểm 8: in thông tin và xếp loại Giỏi. Nhập điểm 11: báo không hợp lệ. Tên rỗng, mã rỗng, ngày sinh tương lai, NaN và vô cực đều bị từ chối bởi IsValid.
+
+
+
+Bài 5 Danh sách đa hình
+
+Dùng List<NguoiHoc> chứa sinh viên chính quy và liên thông. Vòng foreach gọi TinhHocPhi qua lớp cha; từng đối tượng tự áp dụng công thức của loại tương ứng.
+
+
+
+Dữ liệu mẫu gồm CQ01 18 tín chỉ, LT01 15 tín chỉ, CQ02 20 tín chỉ, LT02 12 tín chỉ và CQ03 16 tín chỉ. Mã tạo danh sách nằm trong TaoMau ở bài 10.
+
+Chọn 5: học phí từng sinh viên lần lượt là 8100000, 7800000, 9000000, 6240000 và 7200000 đồng. Tổng học phí 38340000 đồng.
+
+
+
+Bài 6 Hệ thống nhân viên
+
+NhanVien là lớp abstract có TinhLuong. Ba lớp con ghi đè theo công thức quy ước: văn phòng bằng lương cơ bản cộng phụ cấp; kinh doanh cộng hoa hồng doanh số; giảng viên cộng tiền theo số tiết.
+
+
+
+Chọn 6: lương văn phòng 7500000, kinh doanh 9000000, giảng viên 11000000 đồng; tổng 27500000 đồng. Hệ số hoa hồng ngoài [0,1] và dữ liệu âm bị từ chối.
+
+
+
+Bài 7 Quản lý phương tiện
+
+IMove quy định tên, tốc độ, tính chi phí và thời gian. XeMay, OTo, XeDap triển khai qua lớp PhuongTien. Tốc độ và chi phí là thông số mô phỏng do bài làm chọn.
+
+
+
+Nhập 60 km: xe máy 40 km/h, mất 1,5 giờ và 42000 đồng; ô tô 60 km/h, mất 1 giờ và 150000 đồng; xe đạp 15 km/h, mất 4 giờ, chi phí mô phỏng bằng 0. Quãng đường âm bị từ chối.
+
+
+
+Bài 8 Quản lý tài liệu thư viện
+
+TaiLieu lưu mã, tiêu đề và năm; Sach, TapChi, LuanVan bổ sung thuộc tính riêng và override cách in. Menu cho tìm theo mã hoặc tiêu đề, không phân biệt chữ hoa thường.
+
+
+
+Chọn 8: in một sách, một tạp chí và một luận văn. Tìm S01 trả về sách Lập trình C#. Tìm zzzz báo không tìm thấy. Phần lọc danh sách được thể hiện trong ThuVien của Program.cs.
+
+
+
+Bài 9 Hệ thống thanh toán
+
+IPayment là hợp đồng thanh toán. Ba cách thực hiện là tiền mặt, chuyển khoản và ví điện tử. SoGiaoDich chỉ thêm lịch sử sau khi thanh toán thành công. Đây là mô phỏng dữ liệu trong bộ nhớ.
+
+
+
+Thanh toán tiền mặt 150000, khách đưa 200000: thành công GD001, tiền thừa 50000. Chuyển khoản 100000: thành công GD002. Ví có 500000 nhưng trả 9999999: bị từ chối, lịch sử vẫn chỉ có hai giao dịch thành công.
+
+
+
+Bài 10 Nâng cấp quản lý sinh viên
+
+Quản lý chung các sinh viên chính quy và liên thông. Có thêm, sửa, xóa, tìm mã/tên, sắp xếp điểm giảm dần, thống kê theo loại và xuất dữ liệu qua IExportable. Xuất CSV dùng UTF-8, xử lý dấu phẩy và dấu ngoặc kép trong chuỗi.
+
+
+
+Thêm CQ06: danh sách tăng từ 5 lên 6. Sửa thành LT06 thuộc hệ liên thông: tìm lại đúng thông tin. Xuất CSV có 6 bản ghi và một dòng tiêu đề. Xóa LT06: danh sách trở về 5. Mã trùng hoặc dữ liệu không hợp lệ không được cập nhật.
+
+
+
+Mã nguồn điều khiển menu
+
+Program.cs chứa Main, các hàm nhập dữ liệu và menu con. Chọn bài 9 hoặc 10 để mở các chức năng tương ứng. KiemThu.cs đi kèm source để chạy kiểm tra tự động bằng tham số --test.
+
+
+
+
+
+Kiểm thử và phạm vi bài làm
+
+Biên dịch bằng .NET SDK 10.0.402, target .NET 8: 0 lỗi và 0 cảnh báo. Đã chạy 33 kiểm tra lớp và 13 kịch bản menu, đều đạt. Các kiểm tra gồm kế thừa, override, học phí, dữ liệu sai, tính lương, phương tiện, thanh toán và quản lý sinh viên. File Ket_qua_chay_thu.txt lưu đầu vào và đầu ra thực tế.
+
+Chương trình lưu danh sách và lịch sử trong bộ nhớ. Lịch sử thanh toán được tạo lại mỗi lần vào bài 9. File sinhvien_lab03.csv được xuất tại thư mục chạy; đường dẫn được in sau khi xuất. Xuất lại sẽ ghi cập nhật file cùng tên. Ứng dụng chưa có chức năng đọc lại CSV.
+
+Sau bài thực hành, mô hình sinh viên có thể mở rộng bằng lớp con và dùng cùng interface kiểm tra, hiển thị, xuất dữ liệu. Khi bổ sung loại mới, có thể thêm công thức học phí riêng và tiếp tục duyệt qua danh sách NguoiHoc.

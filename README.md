@@ -8,10 +8,13 @@ Bài thực hành môn Lập trình .NET. Mỗi lab để trong một project ri
   điều kiện, vòng lặp và xử lý ngoại lệ.
 - [Lab 02 - OOP cơ bản](Lab02_OOPBasics/README.md): lớp, constructor,
   đóng gói và ứng dụng quản lý sinh viên trong bộ nhớ.
+- [Lab 03 - OOP nâng cao](Lab03_OOPAdvanced/README.md): kế thừa, đa hình,
+  lớp trừu tượng, interface và quản lý nhiều loại sinh viên.
 
 ## Cách chạy
 
 Cài .NET SDK phù hợp với project (Lab01 và Lab02 dùng .NET 10).
+Lab03 dùng .NET 8, phù hợp Visual Studio 2022 hỗ trợ .NET 8.
 Mở `IT3212_Labs.sln` bằng Visual Studio, chọn project cần chạy làm
 Startup Project rồi nhấn Ctrl + F5.
 
