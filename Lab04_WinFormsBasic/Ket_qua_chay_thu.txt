@@ -1,0 +1,57 @@
+﻿ĐẠT: Tính tuổi trước sinh nhật
+ĐẠT: Tính tuổi đúng sinh nhật
+ĐẠT: Từ chối ngày sinh tương lai
+ĐẠT: SinhVien từ chối tên rỗng
+ĐẠT: SinhVien từ chối điểm sai
+ĐẠT: Bốn phép tính
+ĐẠT: Chia cho 0
+ĐẠT: Số thập phân dấu phẩy
+ĐẠT: Số nhập chữ bị từ chối
+ĐẠT: BMI 170 cm và 65 kg
+ĐẠT: BMI không nhận chiều cao 0
+ĐẠT: BMI không nhận cân nặng âm
+ĐẠT: Phân loại BMI tại các mốc
+ĐẠT: Đọc ảnh PNG mẫu
+ĐẠT: Ảnh không tồn tại
+ĐẠT: Từ chối tệp giả ảnh
+ĐẠT: Menu có đủ 10 bài
+ĐẠT: Bài 2 Load nạp 3 khoa, mặc định khoa đầu và Nam
+Mã: SV01
+Họ tên: Nguyễn An
+Ngày sinh: 12/05/2005
+Tuổi: 21
+Giới tính: Nam
+Khoa: Công nghệ thông tin
+Sở thích: Chưa chọn
+ĐẠT: Bài 1 Hiển thị thông tin
+ĐẠT: Bài 3 Đổi ngày cập nhật tuổi
+ĐẠT: Bài 4 Chưa chọn sở thích
+ĐẠT: Bài 4 Chọn Đọc sách và Lập trình
+ĐẠT: RadioButton chỉ chọn một giới tính
+ĐẠT: Bài 5 PictureBox Zoom và thay ảnh
+ĐẠT: Bài 1 Từ chối tên rỗng
+8 ÷ 2 = 4
+ĐẠT: Bài 6 Bấm chia ra 4
+ĐẠT: Bài 6 UI chia 0
+ĐẠT: Bài 6 Làm mới
+ĐẠT: Bài 7 Mật khẩu ẩn mặc định
+ĐẠT: Bài 7 Hiện mật khẩu
+ĐẠT: Bài 7 Thiếu thông tin
+ĐẠT: Bài 7 Sai mật khẩu
+ĐẠT: Bài 7 Đăng nhập và ghi nhớ
+ĐẠT: Bài 7 Mở lại nhớ tên, không nhớ mật khẩu
+BMI = 22.49 — Bình thường
+ĐẠT: Bài 8 UI tính BMI
+ĐẠT: Bài 9 Không chọn học phần
+ĐẠT: Bài 9 Tổng tự cập nhật sau ItemCheck
+ĐẠT: Bài 9 Bỏ chọn về 0
+SP01 — Bút bi
+Loại: Văn phòng phẩm; SL: 3; Giá: 5,000
+Ngày nhập: 21/10/2026; Thành tiền: 15,000 đồng
+Ảnh: Chưa chọn
+ĐẠT: Bài 10 Lập phiếu
+ĐẠT: Bài 10 Giá âm
+ĐẠT: Bài 10 Làm mới xóa ảnh và dữ liệu
+Tổng kết: 41 đạt, 0 lỗi.
+Ảnh PNG được dựng từ các Form và control thật bằng DrawToBitmap. Hộp thoại thông báo được chặn trong chế độ kiểm thử để không chờ bấm OK.
+OpenFileDialog chọn tệp và thao tác đóng cửa sổ cần thử trực tiếp; kiểm thử tự động kiểm tra phần đọc/thay ảnh phía sau hộp thoại.

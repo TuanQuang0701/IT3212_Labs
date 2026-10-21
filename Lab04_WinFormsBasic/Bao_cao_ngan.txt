@@ -1,0 +1,130 @@
+BÁO CÁO NGẮN LAB04
+
+Báo cáo Lab 04 Windows Forms cơ bản
+
+Họ và tên: Lê Tuấn Quang
+Mã sinh viên: 24000641
+Lớp: DCCNTT15.C.1
+Học phần: Lập trình .NET
+
+Em chuyển phần nhập dữ liệu từ Console sang Windows Forms, dùng Label, TextBox, Button, ComboBox, DateTimePicker, CheckBox, RadioButton, PictureBox và CheckedListBox. Ứng dụng gồm một màn hình chọn bài và các Form chức năng.
+
+Môi trường và cách chạy
+
+Project Lab04_WinFormsBasic target .NET Framework 4.8. Mở solution riêng bằng Visual Studio 2022 có workload .NET desktop development và targeting pack 4.8, nhấn Ctrl + F5. Bài 1 đến 5 cùng hoàn thiện frmSinhVien; bài 6 đến 10 mở Form riêng.
+
+Các control được tạo và bố trí bằng C# trong constructor, dùng TableLayoutPanel để chia hàng nhập liệu. Chỉnh giao diện trong source Form; project không có file kéo thả Designer. Lớp SinhVien tiếp tục mô hình Lab02 và bổ sung khoa, giới tính, sở thích, đường dẫn ảnh.
+
+Bài 1 Form thông tin sinh viên
+
+Form có mã, họ tên, ngày sinh, giới tính, khoa và nút Hiển thị. Khi bấm nút, chương trình đọc control, tạo đối tượng SinhVien và hiển thị thông tin bằng MessageBox. Dữ liệu mẫu SV01, Nguyễn An có thể sửa trước khi hiển thị.
+
+Mã nguồn xử lý nút Hiển thị
+
+Ví dụ khởi tạo các control theo tên quy ước:
+
+Kết quả
+
+Bấm Hiển thị với dữ liệu mẫu: thông báo chứa mã SV01, họ tên Nguyễn An, khoa và giới tính. Bỏ trống họ tên: báo dữ liệu chưa hợp lệ.
+
+Bài 2 Khởi tạo ComboBox và trạng thái Form
+
+Sự kiện Load nạp ba khoa từ một chỗ, chọn khoa đầu tiên và mặc định giới tính Nam. ComboBox đặt DropDownList để chọn trong danh sách.
+
+Kết quả
+
+Khi mở Form, ComboBox có Công nghệ thông tin, Công nghệ kỹ thuật ô tô và Kinh tế; khoa đầu tiên được chọn, RadioButton Nam được tích.
+
+Bài 3 Tính tuổi từ DateTimePicker
+
+Ngày sinh hiển thị theo dd/MM/yyyy và không cho chọn ngày tương lai. ValueChanged gọi tính tuổi, cập nhật Label ngay khi thay đổi ngày.
+
+Kết quả
+
+Kiểm tra tại ngày 21/10/2026: sinh 01/12/2005 được 20 tuổi; sinh 21/10/2005 được 21 tuổi. Chọn ngày cách hiện tại đúng 20 năm: Label hiện Tuổi: 20.
+
+Bài 4 Sở thích bằng CheckBox
+
+Các sở thích gồm Đọc sách, Thể thao, Lập trình. Chỉ thêm sở thích khi Checked bằng true. Nút Xem sở thích ghép các mục được chọn vào Label.
+
+Kết quả
+
+Không chọn mục nào: Chưa chọn. Tích Đọc sách và Lập trình: Label hiển thị Đọc sách, Lập trình.
+
+Bài 5 Chọn ảnh đại diện
+
+Nút Chọn ảnh mở OpenFileDialog, kiểm tra tồn tại tệp và loại ảnh rồi tải vào PictureBox Zoom. Ảnh được sao chép ra Bitmap để giải phóng tệp nguồn; khi đổi ảnh thì giải phóng ảnh cũ.
+
+Kết quả
+
+Đã kiểm tra tải PNG mẫu, thay ảnh, từ chối đường dẫn không tồn tại và tệp giả ảnh. Bộ tự động kiểm tra phần xử lý sau khi chọn đường dẫn; OpenFileDialog được thử bằng thao tác Chọn ảnh khi chạy bình thường.
+
+Hình giao diện Form sinh viên sau khi chọn giới tính Nữ, hai sở thích và ảnh mẫu. Ảnh được dựng từ các control thật trong lần kiểm thử.
+
+Bài 6 Máy tính bốn phép toán
+
+Form nhận hai số qua TextBox, có nút cộng, trừ, nhân, chia, Làm mới và Thoát. Hàm đọc số nhận dấu chấm hoặc dấu phẩy thập phân. Chia 0, nhập chữ và tràn số được báo lỗi.
+
+Mã nguồn frmMayTinh.cs
+
+Kết quả
+
+Với 8 và 2: cộng 10, trừ 6, nhân 16, chia 4. Chia 0 bị từ chối; Làm mới xóa hai ô nhập và kết quả.
+
+Bài 7 Form đăng nhập
+
+Form có tên đăng nhập, mật khẩu, ghi nhớ tên trong phiên và hiện/ẩn mật khẩu. Tài khoản giả sinhvien / 123456 được dùng để minh họa giao diện; không kết nối hệ thống xác thực thật.
+
+Mã nguồn frmDangNhap.cs
+
+Kết quả
+
+Mật khẩu ẩn mặc định. Chọn Hiện mật khẩu thì thấy nội dung. Thiếu thông tin hoặc sai tài khoản: Label báo lỗi. Đúng tài khoản: thành công. Ghi nhớ được chọn thì lần mở lại trong cùng phiên có tên đăng nhập; mật khẩu luôn trống. Thoát ứng dụng sẽ mất tên đã nhớ.
+
+Bài 8 Tính chỉ số BMI
+
+Nhập chiều cao đơn vị cm và cân nặng kg. Chương trình đổi chiều cao sang mét, tính cân nặng chia bình phương chiều cao và hiển thị kết quả cùng phân loại bằng Label. Các mốc 18,5 / 25 / 30 dùng minh họa cho người trưởng thành.
+
+Mã nguồn frmBmi.cs
+
+Kết quả
+
+170 cm và 65 kg cho BMI 22,49, Bình thường. Chiều cao 0 hoặc cân nặng âm bị từ chối.
+
+Bài 9 Đăng ký học phần
+
+Dùng CheckedListBox chứa đối tượng HocPhan có tên và số tín chỉ. Khi tích hoặc bỏ tích, tính tổng tín chỉ ngay. ItemCheck xảy ra trước khi danh sách CheckedItems cập nhật nên dùng NewValue cho mục vừa đổi.
+
+Mã nguồn frmHocPhan.cs
+
+Kết quả
+
+Tích Lập trình .NET 3 tín chỉ và Tiếng Anh 2 tín chỉ: tổng 5. Bấm Đăng ký hiện danh sách đã chọn. Không chọn môn thì yêu cầu chọn ít nhất một. Bỏ chọn tất cả đưa tổng về 0.
+
+Bài 10 Phiếu nhập sản phẩm
+
+Form gồm mã, tên, loại, số lượng, đơn giá, ngày nhập và ảnh. Số lượng dùng NumericUpDown dương. Bấm Lập phiếu kiểm tra dữ liệu rồi hiển thị thông tin và thành tiền trên Label. Ảnh có thể để trống.
+
+Mã nguồn frmSanPham.cs
+
+Kết quả
+
+SP01, Bút bi, số lượng 3, đơn giá 5000 cho thành tiền 15000 đồng. Giá âm hoặc mã/tên rỗng bị từ chối. Làm mới xóa dữ liệu, ảnh và đặt số lượng về 1.
+
+Các thành phần dùng chung
+
+GiaoDien.cs có các hàm tạo hàng nhập liệu và nút; Anh là phần xử lý ảnh đã trình bày ở bài 5. Main mở Form được chọn bằng ShowDialog, đóng Form thì về màn hình chính.
+
+Mã nguồn Program.cs
+
+Mã nguồn frmMain.cs
+
+Mã nguồn SinhVien.cs
+
+Kiểm thử và phạm vi hoàn thành
+
+Đã biên dịch target .NET Framework 4.8 bằng .NET SDK 10.0.402, không lỗi và không cảnh báo. Bộ kiểm thử có 41 trường hợp đạt: dữ liệu, công thức và hành vi các control. Log đầy đủ nằm trong Ket_qua_chay_thu.txt. KiemThu.cs có thể chạy lại bằng tham số --test và đường dẫn thư mục kết quả.
+
+Các hình trong báo cáo được dựng từ Form và control thật bằng DrawToBitmap. Trong chế độ kiểm thử, MessageBox được chặn để chạy liên tục; luồng chọn tệp của OpenFileDialog và thao tác đóng Form cần thử trực tiếp khi chạy bình thường.
+
+Bài làm hoàn thành 10 nội dung trong đề. Dữ liệu hiện chỉ giữ trong bộ nhớ và trên giao diện, chưa lưu cơ sở dữ liệu. Phần đăng nhập dùng tài khoản giả; ghi nhớ chỉ áp dụng tên đăng nhập trong phiên. Form sinh viên có thể tiếp tục bổ sung sự kiện và kiểm tra dữ liệu ở Lab05.
