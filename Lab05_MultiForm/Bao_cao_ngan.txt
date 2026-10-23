@@ -1,0 +1,130 @@
+Báo cáo Lab05 sự kiện và ứng dụng đa Form
+
+Họ và tên: Lê Tuấn Quang
+Mã sinh viên: 24000641
+Lớp: DCCNTT15.C.1
+Học phần: Lập trình .NET
+
+Em tiếp tục Form sinh viên của Lab04, bổ sung kiểm tra dữ liệu và luồng nhập, xem chi tiết, tìm kiếm, chọn khoa. Màn hình chính dùng MDI để tổ chức các Form chức năng và giữ một kho dữ liệu chung trong phiên chạy.
+
+Cách chạy và xem giao diện
+
+Giải nén ZIP, mở Lab05_MultiForm.sln bằng Visual Studio có workload .NET desktop development và targeting pack .NET Framework 4.8. Nhấn Ctrl + F5. Chọn Form .cs rồi Shift + F7 để mở Designer; F4 xem Properties, F7 xem code.
+
+Danh mục > Sinh viên mở bài 1–4 và các nút tìm kiếm/chọn khoa. Nghiệp vụ > Tìm sinh viên mở bài 7. Hệ thống có đăng nhập, giới thiệu và thoát. Bài 5, 9, 10 được tích hợp ở Form chính. Danh sách ban đầu có 3 sinh viên mẫu.
+
+Bài 1 Kiểm tra bắt buộc bằng ErrorProvider
+
+ValidateInput xóa lỗi cũ rồi kiểm tra mã và họ tên không rỗng, điểm trong [0,10] và khoa được chọn. Sai ở đâu thì SetError tại control đó. Nút Lưu chỉ thêm sinh viên sau khi toàn bộ dữ liệu hợp lệ; mã trùng được chặn ở kho dữ liệu.
+
+Kết quả thử
+
+Để trống mã và họ tên rồi Lưu: ErrorProvider báo lỗi và danh sách không tăng. Nhập SV04, Test An, điểm 8.5: lưu thành công, danh sách từ 3 lên 4. Lưu lần nữa báo mã đã tồn tại.
+
+Bài 2 Giới hạn ký tự nhập điểm
+
+KeyPress cho chữ số, ký tự điều khiển và tối đa một dấu chấm hoặc phẩy. Khi thay vùng bôi chọn, tính trên chuỗi còn lại để cho phép thay dấu thập phân. Lúc Lưu vẫn kiểm tra lại, vì dán dữ liệu có thể bỏ qua KeyPress.
+
+Kết quả thử
+
+Gõ chữ bị chặn; dấu thập phân thứ hai bị chặn. Điểm 0, 10 và 8,5 hợp lệ. Dán 11, -1, NaN, Infinity, abc hoặc 8.2.3 không lưu được.
+
+Bài 3 Cập nhật trạng thái thời gian thực
+
+Mã, họ tên và điểm dùng chung handler TextChanged. Khi thay đổi, Label xem trước hiển thị mã và họ tên, Label trạng thái cho biết điểm hợp lệ hay cần kiểm tra. SelectedIndexChanged cập nhật khoa đang chọn.
+
+Kết quả thử
+
+Nhập Test An và 8.5: xem trước có tên, trạng thái điểm hợp lệ. Đổi điểm sang 11: chuyển sang kiểm tra điểm. Chọn Kinh tế: Label khoa cập nhật ngay.
+
+Bài 4 Truyền dữ liệu sang Form chi tiết
+
+Form nhập tạo đối tượng SinhVien từ các control, truyền qua constructor của frmChiTietSinhVien. Form chi tiết giữ đối tượng trong trường private readonly và hiển thị khi Load. Hai Form không truy cập control private của nhau.
+
+Mã nguồn frmChiTietSinhVien.cs
+
+Kết quả thử
+
+Truyền đối tượng SV01: Form chi tiết hiện đúng Nguyễn An, điểm 8.20, ngày sinh, tuổi, giới tính và khoa.
+
+Bài 5 MenuStrip và chống mở trùng Form
+
+Menu có Danh mục, Nghiệp vụ, Hệ thống. Form Sinh viên, Khoa, Giới thiệu là MDI child. OpenChildForm tìm loại Form đã mở, kích hoạt lại và hủy đối tượng vừa tạo dư; nếu chưa có thì gán MdiParent và mở.
+
+Kết quả thử
+
+Mở Sinh viên hai lần: chỉ có một cửa sổ Sinh viên. Mở thêm Khoa và Giới thiệu: có ba Form chức năng khác loại.
+
+Bài 6 Đăng nhập có giới hạn lần thử
+
+Tài khoản mẫu sinhvien / 123456. Ba lần nhập sai khóa nút 30 giây. Timer cập nhật số giây còn lại rồi mở nút khi hết hạn. Trạng thái giới hạn do frmMain giữ, nên đóng và mở lại hộp thoại không làm mất khóa trong cùng phiên.
+
+Mã nguồn frmDangNhap.cs
+
+Kết quả thử
+
+Hai lần sai chưa khóa. Lần thứ ba khóa nút; mở lại hộp thoại vẫn khóa. Bộ kiểm tra dùng các mốc thời gian: sau 29 giây còn khóa, đúng 30 giây cho đăng nhập lại. Đăng nhập đúng trả DialogResult.OK. Thông tin trống chỉ nhắc nhập đủ, không tăng lần sai.
+
+Bài 7 Hộp thoại tìm kiếm
+
+frmTimKiem nhận kho dữ liệu qua constructor, tìm theo mã hoặc họ tên không phân biệt hoa thường. Chọn một dòng rồi Chọn để trả đối tượng qua property KetQua và DialogResult.OK. Hủy không cập nhật Form gọi.
+
+Mã nguồn frmTimKiem.cs
+
+Kết quả thử
+
+Tìm sv04 trả về Test An. Chọn kết quả: property KetQua là SV04 và DialogResult.OK. Tìm zzzz: 0 kết quả, nút Chọn bị tắt. Bấm Hủy trả Cancel và không trả sinh viên.
+
+Bài 8 Form chọn khoa
+
+Form nhận danh sách khoa và khoa hiện tại qua constructor. Sau khi chọn, trả property KhoaDaChon. Form gọi chỉ cập nhật ComboBox khi kết quả là OK, không dùng biến toàn cục.
+
+Mã nguồn frmChonKhoa.cs
+
+Kết quả thử
+
+Chọn Kinh tế: property trả đúng tên khoa. Danh sách rỗng không cho bấm Chọn. Hủy thì khoa của Form gọi không đổi.
+
+Bài 9 Xác nhận đóng ứng dụng
+
+Sự kiện FormClosing của frmMain hỏi Yes/No. No đặt e.Cancel=true để giữ ứng dụng; Yes cho đóng. Không yêu cầu xác nhận riêng khi đóng từng Form con. Trường hợp Windows tắt máy hoặc Task Manager đóng thì không chặn bằng hộp thoại.
+
+Mã nguồn HopThoai.cs
+
+Kết quả thử
+
+Bộ kiểm thử mô phỏng chọn No: Form chính vẫn tồn tại và hiển thị. Chọn Yes: Form được đóng. Khi chạy bình thường, hộp thoại MessageBox được hiển thị để người dùng tự chọn.
+
+Bài 10 Dashboard đa Form
+
+Màn hình chính có MenuStrip, StatusStrip, đồng hồ cập nhật mỗi giây và các Form Sinh viên, Khoa, Giới thiệu. Các hộp thoại tìm kiếm/chọn khoa/đăng nhập dùng ShowDialog. Dữ liệu thuộc một đối tượng DuLieu được truyền vào Form con.
+
+Mã nguồn frmMain.cs
+
+Mã nguồn frmKhoa.cs
+
+Mã nguồn frmGioiThieu.cs
+
+Kết quả thử
+
+Menu và thanh trạng thái hiển thị đầy đủ; timer đồng hồ hoạt động. Form con dùng cùng danh sách, sinh viên mới lưu xuất hiện khi mở tìm kiếm hoặc mở lại Form sinh viên.
+
+Mô hình dữ liệu và file Designer
+
+Mã nguồn SinhVien.cs
+
+Mã nguồn DuLieu.cs
+
+Mã nguồn Program.cs
+
+Mỗi Form có InitializeComponent trong Designer.cs để tạo control, đặt thuộc tính và nối sự kiện. File .resx đi kèm. Dưới đây là ví dụ thiết kế Form chi tiết; toàn bộ Designer của các Form khác nằm trong source nộp bài.
+
+Mã nguồn frmChiTietSinhVien.Designer.cs
+
+Kiểm thử và giới hạn
+
+Đã build .NET Framework 4.8: 0 lỗi, 0 cảnh báo. Bộ tự động chạy 39 kiểm tra, đều đạt. Log đầu ra trong Ket_qua_chay_thu.txt; ảnh Form thật được dựng bằng DrawToBitmap trong thư mục KetQua. Hộp thoại Yes/No được thay bằng câu trả lời xác định trong chế độ --test; khóa 30 giây được kiểm tra bằng mốc thời gian, không chờ thật 30 giây trong test.
+
+Bài làm chạy độc lập, chưa sử dụng cơ sở dữ liệu hoặc ghi file danh sách. Nút Lưu chỉ thêm mới, không sửa bản ghi đã tìm; lưu mã trùng sẽ báo lỗi. Đăng nhập là phần mô phỏng riêng theo bài 6, chưa dùng để phân quyền dashboard. Danh sách khoa chỉ xem/chọn, chưa thêm hoặc sửa. Dữ liệu mất sau khi thoát ứng dụng.
+
+Các lớp SinhVien và DuLieu có thể tiếp tục dùng ở Lab06 để hiển thị DataGridView và tách mô hình ba lớp trong bộ nhớ.

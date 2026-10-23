@@ -12,12 +12,15 @@ Bài thực hành môn Lập trình .NET. Mỗi lab để trong một project ri
   lớp trừu tượng, interface và quản lý nhiều loại sinh viên.
 - [Lab 04 - Windows Forms cơ bản](Lab04_WinFormsBasic/README.md): các control,
   Form sinh viên, máy tính, đăng nhập, BMI, học phần và sản phẩm.
+- [Lab 05 - Sự kiện và đa Form](Lab05_MultiForm/README.md): kiểm tra dữ liệu,
+  truyền dữ liệu giữa Form, menu MDI và dashboard.
 
 ## Cách chạy
 
 Cài .NET SDK phù hợp với project (Lab01 và Lab02 dùng .NET 10).
 Lab03 dùng .NET 8, phù hợp Visual Studio 2022 hỗ trợ .NET 8.
 Lab04 dùng .NET Framework 4.8 và workload .NET desktop development.
+Lab05 cũng dùng .NET Framework 4.8, có Designer cho các Form.
 Mở `IT3212_Labs.sln` bằng Visual Studio, chọn project cần chạy làm
 Startup Project rồi nhấn Ctrl + F5.
 

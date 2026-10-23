@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>7.3</LangVersion>
+    <RootNamespace>Lab05_MultiForm</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="frm*.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="frmMain.Designer.cs"><DependentUpon>frmMain.cs</DependentUpon><SubType>Code</SubType></Compile>
+    <Compile Update="frmSinhVien.Designer.cs"><DependentUpon>frmSinhVien.cs</DependentUpon><SubType>Code</SubType></Compile>
+    <Compile Update="frmChiTietSinhVien.Designer.cs"><DependentUpon>frmChiTietSinhVien.cs</DependentUpon><SubType>Code</SubType></Compile>
+    <Compile Update="frmDangNhap.Designer.cs"><DependentUpon>frmDangNhap.cs</DependentUpon><SubType>Code</SubType></Compile>
+    <Compile Update="frmTimKiem.Designer.cs"><DependentUpon>frmTimKiem.cs</DependentUpon><SubType>Code</SubType></Compile>
+    <Compile Update="frmChonKhoa.Designer.cs"><DependentUpon>frmChonKhoa.cs</DependentUpon><SubType>Code</SubType></Compile>
+    <Compile Update="frmKhoa.Designer.cs"><DependentUpon>frmKhoa.cs</DependentUpon><SubType>Code</SubType></Compile>
+    <Compile Update="frmGioiThieu.Designer.cs"><DependentUpon>frmGioiThieu.cs</DependentUpon><SubType>Code</SubType></Compile>
+  </ItemGroup>
+</Project>

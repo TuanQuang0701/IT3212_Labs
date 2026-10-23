@@ -1,0 +1,43 @@
+﻿ĐẠT: Điểm biên 0 và 10
+ĐẠT: Từ chối điểm -1
+ĐẠT: Từ chối điểm 11
+ĐẠT: Từ chối điểm NaN
+ĐẠT: Từ chối điểm Infinity
+ĐẠT: Từ chối điểm 8.2.3
+ĐẠT: Từ chối điểm abc
+ĐẠT: Từ chối điểm 
+ĐẠT: Điểm dấu phẩy
+ĐẠT: KeyPress chặn chữ
+ĐẠT: KeyPress chặn dấu thập phân thứ hai
+ĐẠT: KeyPress cho thay dấu đang chọn
+ĐẠT: KeyPress cho Backspace
+ĐẠT: Tìm mã và tên không phân biệt hoa thường
+ĐẠT: Không lưu mã trùng
+ĐẠT: Khóa đúng lần thứ 3, mở đúng sau 30 giây
+ĐẠT: Bài 1 ErrorProvider mã và tên rỗng
+ĐẠT: Bài 2 Dán điểm 11 không lưu được
+ĐẠT: Bài 2 Handler KeyPress thực tế
+ĐẠT: Bài 3 Xem trước và trạng thái tự cập nhật
+ĐẠT: Bài 1 Lưu hợp lệ và xóa lỗi cũ
+ĐẠT: Bài 1 Mã trùng báo lỗi tại control
+ĐẠT: SelectedIndexChanged cập nhật khoa
+Đã lưu Test An, SV04, 8.5 vào cùng kho dữ liệu; danh sách 4 sinh viên.
+ĐẠT: Bài 4 Truyền đối tượng qua constructor
+ĐẠT: Bài 7 Kết quả lọc và chọn
+ĐẠT: Bài 7 Trả property và DialogResult OK
+ĐẠT: Bài 7 Không có kết quả không cho chọn
+ĐẠT: Bài 7 Hủy không trả dữ liệu
+ĐẠT: Bài 8 Trả khoa qua property
+ĐẠT: Bài 8 Danh sách khoa rỗng
+ĐẠT: Bài 6 UI khóa nút sau 3 lần sai
+ĐẠT: Bài 6 Mở lại không bỏ qua khóa
+ĐẠT: Bài 6 Đúng tài khoản trả OK
+ĐẠT: Bài 5 Không mở trùng Form MDI
+ĐẠT: Bài 10 Ba Form chức năng
+ĐẠT: Bài 10 Menu và StatusStrip
+ĐẠT: Bài 10 Đồng hồ có giây
+ĐẠT: Bài 9 Chọn No hủy đóng
+ĐẠT: Bài 9 Chọn Yes đóng ứng dụng
+Tổng kết: 39 đạt, 0 lỗi.
+Ảnh PNG dựng từ control thật bằng DrawToBitmap; MessageBox xác nhận được thay bằng câu trả lời Yes/No trong chế độ --test.
+Khóa 30 giây được kiểm tra bằng mốc thời gian xác định; UI kiểm tra nút bị khóa, timer hoạt động. Không phải chờ thật 30 giây trong bộ tự động.
